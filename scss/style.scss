@@ -7,9 +7,50 @@
 	padding: 0;
 }
 
-
 body {
+	font-family: 'Source Code Pro', monospace;
 	color: $font;
 	background-color: $background;
+}
+
+.nav {
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	padding: 2rem;
+
+	&__title{
+		margin: 1em;
+	}
+
+	&__logo {
+		color: $font;
+		font-size: 3rem;
+		
+		&-first{
+			color: #ff3c5f;
+		}
+	}
+
+	&__logins{
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__login {
+		margin: 1em;
+		padding: 1em;
+		color: $nav-login;
+		background-color: #fff;
+	}
+
+	&__logo,
+	&__login {
+		font-weight: bold;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+
 
 }

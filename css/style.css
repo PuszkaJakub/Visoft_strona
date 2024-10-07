@@ -11,6 +11,40 @@
 }
 
 body {
+  font-family: "Source Code Pro", monospace;
   color: #ffffff;
   background-color: #101728;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 2rem;
+}
+.nav__title {
+  margin: 1em;
+}
+.nav__logo {
+  color: #ffffff;
+  font-size: 3rem;
+}
+.nav__logo-first {
+  color: #ff3c5f;
+}
+.nav__logins {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav__login {
+  margin: 1em;
+  padding: 1em;
+  color: #9340ff;
+  background-color: #fff;
+}
+.nav__logo, .nav__login {
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
 }/*# sourceMappingURL=style.css.map */
